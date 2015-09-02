@@ -25,12 +25,12 @@
       </button>
       <a class="navbar-brand" href="#"><img src="img/al.png"></a>
     </div>
-
+    
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="inicio.jsp">INICIO<span class="sr-only">(current)</span></a></li>
-        <li><a  href="registro.jsp">REGISTRO</a></li>
+        <li><a  href="registro.jsp">REGISTRO <span class="caret"></span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">REPORTE <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -46,6 +46,12 @@
             <li><a href="#"><img src="" alt="">PEDIDO</a></li>
           
           </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MANTENIMIENTOS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="entidad_financ.jsp"><img src="" alt="">ENT. FINANCIERAS</a></li>
+             </ul>
         </li>
       </ul>
            <ul class="nav navbar-nav navbar-right">
