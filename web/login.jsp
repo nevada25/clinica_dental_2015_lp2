@@ -19,6 +19,7 @@
 	</header>	
 	<section>
 		<div class="cuerpo">
+                    <form action="inicio.jsp">
         <div class="panel panel-default">
   <div class="panel-heading"><b><h2>INGRESE USUARIO</h2></b></div>
   <div class="panel-body">
@@ -31,10 +32,10 @@
     <label for="exampleInputPassword1">CONTRASE&Ntilde;A</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="INGRESE CONTRASE&Ntilde;A">
   </div>
-  <button type="submit" class="btn btn-default">ACEPTAR <img  src="img/ok.png" alt=""></button>
+       <button  type="submit" class="btn btn-default">ACEPTAR <img  src="img/ok.png" alt=""></button>
   
   <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#c">REGISTRAR <img  src="img/user.png" alt=""></button>
-  
+    </form>
 <!-- Modal -->
 <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
