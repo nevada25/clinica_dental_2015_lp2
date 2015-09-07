@@ -7,16 +7,10 @@
     <title>PERU_JAPO</title>
     <link rel="shortcut icon"  href="img/logo.ico" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos/miestilo.css">
-</head>
+    <link rel="stylesheet" href="estilos/miestilo3.css">
+    </head>
 <body>
-    <header>
-		<div class="cabecera"><h1><b>CLINICA DENTAL PERUANO JAPONES</b></h1></div>
-		<div class="botonmenu"><a href=""><img  src="img/icon1.ico" alt=""></a>
-	
-		</div>
-
-	</header>	
+    <center>
 	<section>
 		<div class="cuerpo">
                     <form action="inicio.jsp">
@@ -26,15 +20,15 @@
     <form>
   <div class="form-group">
     <label for="exampleInputEmail1">USUARIO</label>
-    <input type="user" class="form-control" id="exampleInputEmail1" placeholder="INGRESE USUARIO">
+    <input type="user" class="form-control" id="exampleInputEmail1" placeholder="INGRESE USUARIO" required class>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">CONTRASE&Ntilde;A</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="INGRESE CONTRASE&Ntilde;A">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="INGRESE CONTRASE&Ntilde;A" required class>
   </div>
        <button  type="submit" class="btn btn-default">ACEPTAR <img  src="img/ok.png" alt=""></button>
   
-  <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#c">REGISTRAR <img  src="img/user.png" alt=""></button>
+  <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#registro">REGISTRAR <img  src="img/user.png" alt=""></button>
     </form>
 <!-- Modal -->
 <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -42,40 +36,40 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">REGISTRAR NUEVO USUARIO</h4>
       </div>
       <div class="modal-body">
       <form>
           <div class="form-group">
-    <label for="exampleInputEmail1">USUARIO</label>
+    <label for="exampleInputEmail1">USUARIO:</label>
     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="INGRESE DNI">
   </div>
           <div class="form-group">
-              <label for="exampleInputEmail1">CONTRASE&Ntilde;A</label>
+              <label for="exampleInputEmail1">CONTRASE&Ntilde;A:</label>
     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="INGRESE DNI">
   </div>
           <div class="form-group">
-    <label for="exampleInputEmail1">CORREO ELECTRONICO</label>
+    <label for="exampleInputEmail1">CORREO ELECTRONICO:</label>
     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="INGRESE DNI">
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">DNI</label>
+    <label for="exampleInputEmail1">DNI:</label>
     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="INGRESE DNI">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">NOMBRE</label>
+    <label for="exampleInputPassword1">NOMBRE:</label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="INGRESE NOMBRE">
   </div>
     <div class="form-group">
-    <label for="exampleInputPassword1">APELLIDO PATERNO</label>
+    <label for="exampleInputPassword1">APELLIDO PATERNO:</label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="INGRESE APELLIDO">
   </div>
     <div class="form-group">
-    <label for="exampleInputPassword1">APELLIDO MATERNO</label>
+    <label for="exampleInputPassword1">APELLIDO MATERNO:</label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="INGRESE APELLIDO">
   </div>
     <div class="form-group">
-    <label for="exampleInputPassword1">TELEFONO</label>
+    <label for="exampleInputPassword1">TELEFONO:</label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="TELEFONO">
   </div>
     <div class="form-group">
@@ -86,8 +80,8 @@
   </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        <button type="button" class="btn btn-primary">GUARDAR</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">CANCELAR</button>
+        <button type="button" class="btn btn-primary">CREAR</button>
       </div>
     </div>
   </div>
@@ -100,10 +94,8 @@
         
         </div>
 	</section>
-	<footer>
-		<div class="pie">&copy; HECHO POR MI, PARA MI </div>
-
-	</footer>
+</center>
+	
 
 
 	<script src="jquery/jquery-2.1.4.min.js">

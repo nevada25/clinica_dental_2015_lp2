@@ -3,11 +3,11 @@ h2{
 	padding:0.5px;
 	font-size:26px;
 }
-section.forma{
+section{
 	width:550px;
 	text-align:center;
 	background-position:center;
-	background: #000000;
+	
 	margin-left:180px;
 	margin-top:100px;
 }

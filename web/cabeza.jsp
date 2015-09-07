@@ -34,7 +34,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">REPORTE <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><img  src="img/paciente.png" alt=""> PACIENTE</a></li>
+            <li><a href="registro_paciente.jsp"><img  src="img/paciente.png" alt=""> PACIENTE</a></li>
             <li><a href="#"><img  src="img/doctor2.png" alt=""> DOCTOR</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#"><img src="" alt="">ESPECIALIDAD</a></li>
