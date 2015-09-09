@@ -3,9 +3,12 @@
 section{
 	margin:5%;
 }
+h1{
+   color: black;
+}
 </style>
 <section>
-<h1 align="center">PACIENTE</h1>
+    <h1 align="center" class="pa">PACIENTE</h1>
 <div class="table-responsive">
   <table class="table">
   <tr height="23">

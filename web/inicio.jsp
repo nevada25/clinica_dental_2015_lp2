@@ -1,4 +1,10 @@
 <%@include file="cabeza.jsp" %>
+<style>
+div.contenedor{
+	padding:0;
+	margin:0;
+}
+</style>
 <div id="contenedor">
     <div id="myCarousel" class="carousel slide">
       <ol class="carousel-indicators">

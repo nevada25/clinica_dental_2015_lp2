@@ -1,5 +1,5 @@
 h1{
-	color: red;
+	color: white;
 	padding-top:2px;
 }
 h2{
@@ -18,11 +18,12 @@ modal fade{
 	padding:12px ;
 	margin:12px auto;}
 .cabecera{
-	background: #000000;
+	background:#000000;
 	font-size: 200%;
 	color: green;
 	height: 130px;
-	padding-top: 5px;
+	background-repeat:no-repeat;
+	padding-top: 15px;
 	padding-left: 45px;
 	text-align: center;
 	padding-right: 45px;

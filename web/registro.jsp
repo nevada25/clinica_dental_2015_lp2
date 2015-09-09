@@ -1,9 +1,29 @@
 <%@include file="cabeza.jsp" %>
 
+<style>
+section{
+	margin:5%;
+}
+h1{
+   color: black;
+   text-align:center;
+   
+}
+.btn-primary{
+	background: #F70004;
+}
+.modal-body{
+	text-align:center;
+}
+
+</style>
 <div id="cuerpo">
-<div class="row">
-  <div class="col-md-2">
-<!-- PACIENTE-->
+<section>
+    <h1 align="center" class="pa">REGISTRO</h1>
+<div class="table-responsive">
+  <table class="table">
+  <tr height="23">
+  	<th><!-- PACIENTE-->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#paciente">
   PACIENTE
 </button>
@@ -46,14 +66,13 @@
   </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        <button type="button" class="btn btn-primary">ACEPTAR</button>
       </div>
     </div>
   </div>
-</div></div>
-  <div class="col-md-2">
-<!--ESPECIALISTA-->
+</div></div></th>
+  	<th> <!--ESPECIALISTA-->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#doctor">
   DOCTOR
 </button>
@@ -64,7 +83,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h1 class="modal-title" id="myModalLabel">DOCTOR</h1>
       </div>
       <div class="modal-body">
       <form>
@@ -100,14 +119,13 @@
   </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        <button type="button" class="btn btn-primary">GUARDAR</button>
+   <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        <button type="button" class="btn btn-primary">ACEPTAR</button>
       </div>
     </div>
   </div>
-</div></div>
-  <div class="col-md-2"><!--ESPECIALISTA-->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#material">
+</div></div></th>
+  	<th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#material">
  MATERIAL
 </button>
 
@@ -117,7 +135,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h1 class="modal-title" id="myModalLabel">MATERIAL</h1>
       </div>
       <div class="modal-body">
       <form>
@@ -153,14 +171,13 @@
   </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        <button type="button" class="btn btn-primary">GUARDAR</button>
+       <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        <button type="button" class="btn btn-primary">ACEPTAR</button>
       </div>
     </div>
   </div>
-</div></div></div>
-   <div class="col-lg-2"><!--ESPECIALISTA-->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#proveedor">
+</div></div></div></th>
+  	<th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#proveedor">
   PROVEEDOR
 </button>
 
@@ -170,7 +187,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h1 class="modal-title" id="myModalLabel">PROVEEDOR</h1>
       </div>
       <div class="modal-body">
       <form>
@@ -211,9 +228,8 @@
       </div>
     </div>
   </div>
-</div></div>
-<div class="col-md-2"><!--ESPECIALISTA-->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pedido">
+</div></div></th>
+  	<th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pedido">
   PEDIDO
 </button>
 
@@ -223,7 +239,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h1 class="modal-title" id="myModalLabel">PEDIDO</h1>
       </div>
       <div class="modal-body">
       <form>
@@ -264,19 +280,18 @@
       </div>
     </div>
   </div>
-</div></div>
-<div class="col-md-2"><!--ESPECIALISTA-->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pedido">
+</div></div></th>
+  	<th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#espe">
   ESPECIALIDAD
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="pedido" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="espe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h1 class="modal-title" id="myModalLabel">ESPECIALIDAD</h1>
       </div>
       <div class="modal-body">
       <form>
@@ -316,11 +331,17 @@
         <button type="button" class="btn btn-primary">GUARDAR</button>
       </div>
     </div>
-  </div>
-</div></div>
+  </div></th>
+       
+  </tr>
+  
+  </table>
 </div>
-</div>
-</div>
+</section>
+
+
+
+
 <center>
 
 </center>

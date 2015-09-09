@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-		<div class="cabecera"><h1><b>CLINICA DENTAL PERUANO JAPONES</b></h1></div>
+		<div class="cabecera"><h1><b><img  src="">CLINICA DENTAL PERUANO JAPONES</b></h1></div>
 </header>	
 	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -30,20 +30,20 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="inicio.jsp">INICIO<span class="sr-only">(current)</span></a></li>
-        <li><a  href="registro.jsp">REGISTRO <span class="caret"></span></a></li>
+        <li><a  href="registro.jsp">REGISTRO</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">REPORTE <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="registro_paciente.jsp"><img  src="img/paciente.png" alt=""> PACIENTE</a></li>
-            <li><a href="#"><img  src="img/doctor2.png" alt=""> DOCTOR</a></li>
+            <li><a  href="registro_doctor.jsp"><img  src="img/doctor2.png" alt=""> DOCTOR</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#"><img src="" alt="">ESPECIALIDAD</a></li>
+            <li><a href="registro_especialidad.jsp"><img src="" alt="">ESPECIALIDAD</a></li>
             <li><a href="#"><img src="" alt="">CONSULTAS</a></li>
             <li><a href="#"><img src="" alt="">HISTORIAL</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#"><img src="" alt="">MATERIAL</a></li>
-            <li><a href="#"><img src="" alt="">PROVEEDOR </a></li>
-            <li><a href="#"><img src="" alt="">PEDIDO</a></li>
+            <li><a  href="registro_material.jsp"><img src="" alt="">MATERIAL</a></li>
+            <li><a  href="registro_proveedor.jsp"><img src="" alt="">PROVEEDOR </a></li>
+            <li><a  href="registro_pedido.jsp"><img src="" alt="">PEDIDO</a></li>
           
           </ul>
         </li>
@@ -59,10 +59,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VISITENOS<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><img src="" alt="">FACEBOOK</a></li>
-            <li><a href="#"><img src="" alt="">INSTAGRAN</a></li>
-            <li><a href="#"><img src="" alt="">twenti</a></li>
-            
+          <center>
+            <li><a href="#"><img  src="img/face.png"  class="img-responsive">FACEBOOK</a></li>
+            <li><a href="#"><img  src="img/ins.png"  class="img-responsive">INSTAGRAN</a></li>
+            <li><a href="#"><img  src="img/tw.png" class="img-responsive">twitter</a></li>
+            </center>
           </ul>
           <li><a href="login.jsp"><img src="img/salir3.png"></a></li>
         </li>

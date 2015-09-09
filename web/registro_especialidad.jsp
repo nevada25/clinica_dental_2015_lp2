@@ -8,7 +8,7 @@ h1{
 }
 </style>
 <section>
-    <h1 align="center" class="pa">USUARIO</h1>
+    <h1 align="center" class="pa">ESPECIALIDAD</h1>
 <div class="table-responsive">
   <table class="table">
   <tr height="23">
