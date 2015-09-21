@@ -7,6 +7,7 @@
     <title>PERU_JAPO</title>
     <link rel="shortcut icon"  href="img/logo.ico" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script  src="file/lib/jquery-1.10.1.min.js"></script>
     <link rel="stylesheet" href="estilos/menu.css">
 </head>
 <body>
@@ -31,6 +32,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="inicio.jsp">INICIO<span class="sr-only">(current)</span></a></li>
         <li><a  href="registro.jsp">REGISTRO</a></li>
+        <li><a  href="citas.jsp">CITAS</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">REPORTE <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -60,7 +62,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VISITENOS<span class="caret"></span></a>
           <ul class="dropdown-menu">
           <center>
-            <li><a href="#"><img  src="img/face.png"  class="img-responsive">FACEBOOK</a></li>
+            <li><a href="https://www.facebook.com/centroodontologicoperuanojaponesa1?fref=ts"><img  src="img/face.png"  class="img-responsive">FACEBOOK</a></li>
             <li><a href="#"><img  src="img/ins.png"  class="img-responsive">INSTAGRAN</a></li>
             <li><a href="#"><img  src="img/tw.png" class="img-responsive">twitter</a></li>
             </center>
