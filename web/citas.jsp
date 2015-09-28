@@ -6,36 +6,7 @@
 
     <div class="tama">
    <div id="tituloprint">www.webcalendario.com</div>
-	<header>
-		<div id="logo">
-			
-				<h1>webcalendario.com</h1>
-				<h2>Tu calendario en la nube</h2>
-			</div>
-			<nav>
-				<ul>
-					<li>
-						Inicio
-					</li>
-					<li>
-						FAQ
-					</li>
-					<li id="botonlogin">
-						Inicia sesion
-					</li>
-					<li id="botonsignin">
-						Regístrate
-					</li>
-					<li id="contacto">
-						Contacto
-					</li>
-					<li id="contacto">
-						<a href="">Cerrar Sesion</a>
-					</li>
-				</ul>
-			</nav>
-	</header>
-	<table width="100%">
+   <table width="100%">
 	<tbody><tr>
 	<td id="aniotitulo">
 		<h2>Septiembre</h2><h1>2014</h1></td>
@@ -127,7 +98,7 @@
 					<table width="100%" id="tablanuevoevento" cellpadding="0" cellspacing="0">
 						<tbody><tr>
 							<td>
-								Año:
+								AÃ±o:
 							</td>
 							<td>
 								2014							</td>
@@ -207,7 +178,7 @@
 						</tr>
 						<tr>
 							<td>
-								Duración:
+								DuraciÃ³n:
 							</td>
 							<td>
 								<select name="duracion">
