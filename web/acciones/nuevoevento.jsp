@@ -31,7 +31,7 @@
          try{
             Statement stm =ConectarOracle.conectar().createStatement();
          
-            stm.executeUpdate("insert into evento values(8,"+request.getParameter("calendario")+",'"+request.getParameter("nombre")+"',"+request.getParameter("anio")+","+request.getParameter("mes")+","+request.getParameter("dia")+","+request.getParameter("hora")+","+request.getParameter("minuto")+","+request.getParameter("segundo")+","+request.getParameter("duracion")+")");
+            stm.executeUpdate("insert into evento values(null,"+request.getParameter("calendario")+",'"+request.getParameter("nombre")+"',"+request.getParameter("anio")+","+request.getParameter("mes")+","+request.getParameter("dia")+","+request.getParameter("hora")+","+request.getParameter("minuto")+","+request.getParameter("segundo")+","+request.getParameter("duracion")+")");
                  
             stm.close();
                          

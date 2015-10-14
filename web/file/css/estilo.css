@@ -2,6 +2,7 @@ html,body{
     height: 100%;
 }
 body{
+	font-family:sans-serif;font-size:10px;
 	margin:0px;
 	padding:0px;
 	font-family: 'Gafata', sans-serif;

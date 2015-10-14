@@ -7,21 +7,15 @@
     <link rel="shortcut icon"  href="img/logo.ico" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jum.css">
+        <script  src="file/lib/jquery-1.10.1.min.js"></script>
+		<script  src="file/lib/jquery-ui.js"></script>
+		<script   src="file/js/codigo.js"></script>
+               
+	
     </head>
     <body>
-          
-        
-
-    <section class="jumbotron">
-      <div class="container">
-        <h1 class="tituloweb hover" ><b>PERUANO JAPONES</b></h1>
-        <img  src="img/logo.ico" class="img-responsive">
-          <b class="infinita">CLINICA DENTAL</b>
-      </div>
-    </section>
-   
         <header>
-<nav class="navbar navbar-inverse">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -37,10 +31,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-          <li class="active "><a href="#" class="glyphicon glyphicon-home"><b>INICIO</b><span class="sr-only">(current)</span></a></li>
-        <li><a href="#">c</a></li>
+          <li class="active "><a href="inicio.jsp" class="glyphicon glyphicon-home"><b>INICIO</b><span class="sr-only">(current)</span></a></li>
+        <li><a href="registro.jsp">REGISTROS</a></li>
+        <li><a href="registro.jsp">CALENDARIO</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle glyphicon glyphicon-list-alt" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VISTAS<span class="caret "></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -72,3 +67,4 @@
 </nav>
           
     </header>
+        <section class="cuerpo" style="margin-top: 110px;">

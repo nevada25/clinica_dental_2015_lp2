@@ -1,20 +1,7 @@
 <%@include file="cabeza.jsp" %>
-
 <style>
-section{
-	margin:5%;
-}
-h1{
-   color: black;
-   text-align:center;
-   
-}
-.btn-primary{
-	background: #F70004;
-}
-.modal-body{
-	text-align:center;
-}
+.cuerpo{
+	height:400px;}
 
 </style>
 <div id="cuerpo">
@@ -22,8 +9,8 @@ h1{
     <h1 align="center" class="pa">REGISTRO</h1>
 <div class="table-responsive">
   <table class="table">
-  <tr height="23">
-  	<th><!-- PACIENTE-->
+  <tr >
+  	<th class="col-lg-2"><!-- PACIENTE-->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#paciente">
   PACIENTE
 </button>
@@ -34,28 +21,23 @@ h1{
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h1 class="modal-title" id="myModalLabel">REGISTRO PERSONA</h1>
+        <center><h1 class="modal-title" id="myModalLabel">REGISTRO PERSONA</h1></center>
       </div>
       <div class="modal-body">
         <form>
   <div class="form-group">
-    <label for="exampleInputEmail1">DNI</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="INGRESE DNI">
+    <input type="text" class="form-control " id="exampleInputEmail1" placeholder="INGRESE DNI">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">NOMBRE</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="INGRESE NOMBRE">
+    <input type="text" class="form-control " id="exampleInputPassword1" placeholder="INGRESE NOMBRE">
   </div>
     <div class="form-group">
-    <label for="exampleInputPassword1">APELLIDO PATERNO</label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="INGRESE APELLIDO">
   </div>
     <div class="form-group">
-    <label for="exampleInputPassword1">APELLIDO MATERNO</label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="INGRESE APELLIDO">
   </div>
     <div class="form-group">
-    <label for="exampleInputPassword1">TELEFONO</label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="TELEFONO">
   </div>
     <div class="form-group">
@@ -72,7 +54,7 @@ h1{
     </div>
   </div>
 </div></div></th>
-  	<th> <!--ESPECIALISTA-->
+  	<th class="col-lg-2"> <!--ESPECIALISTA-->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#doctor">
   DOCTOR
 </button>
@@ -125,7 +107,7 @@ h1{
     </div>
   </div>
 </div></div></th>
-  	<th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#material">
+<th class="col-lg-2"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#material">
  MATERIAL
 </button>
 
@@ -177,7 +159,7 @@ h1{
     </div>
   </div>
 </div></div></div></th>
-  	<th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#proveedor">
+  	<th class="col-lg-2"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#proveedor">
   PROVEEDOR
 </button>
 
@@ -229,7 +211,7 @@ h1{
     </div>
   </div>
 </div></div></th>
-  	<th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pedido">
+  	<th class="col-lg-2"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pedido">
   PEDIDO
 </button>
 
@@ -281,7 +263,7 @@ h1{
     </div>
   </div>
 </div></div></th>
-  	<th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#espe">
+  	<th class="col-lg-2"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#espe">
   ESPECIALIDAD
 </button>
 

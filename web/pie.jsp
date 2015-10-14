@@ -1,4 +1,5 @@
-    <footer>
+   
+<footer>
     <div class="container">
       <div class="row">
         <div class="col-xs-6">
@@ -15,7 +16,7 @@
     </div>
   </footer>
          </section>
-        
+        <div id="ajax"></div>
     
 	<script src="jquery/jquery-2.1.4.min.js">
 	</script>

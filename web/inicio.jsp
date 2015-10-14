@@ -1,7 +1,7 @@
 <%@include file="cabeza.jsp" %>
 
 
-        <section class="cuerpo">
+ 
   <section class="main container">
   	<div class="row">
       <section class="posts col-md-9">
@@ -95,6 +95,6 @@
     </a>
   </aside>
     </div>
-  </section>
+
     
 <%@include file="pie.jsp" %>
