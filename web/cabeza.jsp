@@ -32,8 +32,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
           <li class="active "><a href="inicio.jsp" class="glyphicon glyphicon-home"><b>INICIO</b><span class="sr-only">(current)</span></a></li>
-        <li><a href="registro.jsp">REGISTROS</a></li>
-        <li><a href="registro.jsp">CALENDARIO</a></li>
+          <li><a href="registro.jsp" class="glyphicon glyphicon-file">REGISTROS</a></li>
+          <li><a href="registro.jsp" class="glyphicon glyphicon-log-in">CALENDARIO</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle glyphicon glyphicon-list-alt" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VISTAS<span class="caret "></span></a>
           <ul class="dropdown-menu">
@@ -50,16 +50,7 @@
     
       <ul class="nav navbar-nav navbar-right">
         
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SIGUENOS<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">FACEBOOK</a></li>
-            <li><a href="#">INSTARAN</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+       
         <li><a href="login.jsp"><img src="img/salir3.png" class="img-responsive"></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->

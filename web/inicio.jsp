@@ -52,21 +52,24 @@
              <a href="#" class="btn btn-success">COMENTARIOS <span class="badge">20</span></a>
            </div>
          </article>
-         <nav>
-         <div class="center-block">
+          
+          <nav>
+              <div class="col-lg-3"></div>
+         <div class="center-block col-lg-6">
            <ul class="pagination">
              <li class="disabled"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li>
              <li class="active">
                <a href="">1</a>
              </li>
-             <li><a href="#">1</a></li>
              <li><a href="#">2</a></li>
              <li><a href="#">3</a></li>
              <li><a href="#">4</a></li>
              <li><a href="#">5</a></li>
+             <li><a href="#">6</a></li>
              <li><a href="#">&raquo;<span class="sr-only">Siguiente</span></a></li>
            </ul>
          </div>
+              <div class="col-lg-3"></div>
          </nav>
       </section>
       <aside class="col-md-3 hidden-xs hidden-sm">
