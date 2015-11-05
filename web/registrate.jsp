@@ -4,12 +4,9 @@
   <div style="padding-top: 30px;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        
-        <h1 class="modal-title " id="myModalLabel"><b>REGISTRO</b></h1>
-      </div>
-      <div class="modal-body">
+           <div class="modal-body">
   <form class="form-horizontal " style="margin: 12px;">
+      <h1 class="modal-title " id="myModalLabel" style="margin: 20px;"><b>REGISTRO</b></h1>
   <div class="form-group">
       <label for="inputEmail3" class="col-sm-4 control-label" style="text-align: left;">USUARIO</label>
     <div class="col-sm-8">
