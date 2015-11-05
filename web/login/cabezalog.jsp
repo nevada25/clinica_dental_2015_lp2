@@ -23,7 +23,7 @@
     <body>
     <center>
         <div class="row-fuid" >
-           <nav class="navbar navbar navbar-fixed-top" style=" border-radius: 0px; color: #ffffff;">
+           <nav class="navbar navbar navbar-fixed-top" style=" border-radius: 0px; background: #000000; color: #ffffff;">
                <div class="container-fluid"  >
                          <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header " >
