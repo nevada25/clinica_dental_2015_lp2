@@ -1,156 +1,87 @@
-(function($) {
-    "use strict";
-	
-	// Options for Message
-	//----------------------------------------------
-  var options = {
-	  'btn-loading': '<i class="fa fa-spinner fa-pulse"></i>',
-	  'btn-success': '<i class="fa fa-check"></i>',
-	  'btn-error': '<i class="fa fa-remove"></i>',
-	  'msg-success': 'All Good! Redirecting...',
-	  'msg-error': 'Wrong login credentials!',
-	  'useAJAX': true,
-  };
-
-	// Login Form
-	//----------------------------------------------
-	// Validation
-  $("#login-form").validate({
-  	rules: {
-      lg_username: "required",
-  	  lg_password: "required",
-    },
-  	errorClass: "form-invalid"
-  });
   
-	// Form Submission
-  $("#login-form").submit(function() {
-  	remove_loading($(this));
-		
-		if(options['useAJAX'] == true)
-		{
-			// Dummy AJAX request (Replace this with your AJAX code)
-		  // If you don't want to use AJAX, remove this
-  	  dummy_submit_form($(this));
-		
-		  // Cancel the normal submission.
-		  // If you don't want to use AJAX, remove this
-  	  return false;
-		}
-  });
-	
-	// Register Form
-	//----------------------------------------------
-	// Validation
-  $("#register-form").validate({
-  	rules: {
-      reg_username: "required",
-  	  reg_password: {
-  			required: true,
-  			minlength: 5
-  		},
-   		reg_password_confirm: {
-  			required: true,
-  			minlength: 5,
-  			equalTo: "#register-form [name=reg_password]"
-  		},
-  		reg_email: {
-  	    required: true,
-  			email: true
-  		},
-  		reg_agree: "required",
-    },
-	  errorClass: "form-invalid",
-	  errorPlacement: function( label, element ) {
-	    if( element.attr( "type" ) === "checkbox" || element.attr( "type" ) === "radio" ) {
-    		element.parent().append( label ); // this would append the label after all your checkboxes/labels (so the error-label will be the last element in <div class="controls"> )
-	    }
-			else {
-  	  	label.insertAfter( element ); // standard behaviour
-  	  }
+$(function() {
+    
+    var $formLogin = $('#login-form');
+    var $formLost = $('#lost-form');
+    var $formRegister = $('#register-form');
+    var $divForms = $('#div-forms');
+    var $modalAnimateTime = 300;
+    var $msgAnimateTime = 150;
+    var $msgShowTime = 2000;
+
+    $("form").submit(function () {
+        switch(this.id) {
+            case "login-form":
+                var $lg_username=$('#login_username').val();
+                var $lg_password=$('#login_password').val();
+                if ($lg_username == "ERROR") {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+                } else {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+                }
+                return false;
+                break;
+            case "lost-form":
+                var $ls_email=$('#lost_email').val();
+                if ($ls_email == "ERROR") {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+                } else {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+                }
+                return false;
+                break;
+            case "register-form":
+                var $rg_username=$('#register_username').val();
+                var $rg_email=$('#register_email').val();
+                var $rg_password=$('#register_password').val();
+                if ($rg_username == "ERROR") {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+                } else {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+                }
+                return false;
+                break;
+            default:
+                return false;
+        }
+        return false;
+    });
+    
+    $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+    $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+    $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+    $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+    $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+    $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+    
+    function modalAnimate ($oldForm, $newForm) {
+        var $oldH = $oldForm.height();
+        var $newH = $newForm.height();
+        $divForms.css("height",$oldH);
+        $oldForm.fadeToggle($modalAnimateTime, function(){
+            $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                $newForm.fadeToggle($modalAnimateTime);
+            });
+        });
     }
-  });
-
-  // Form Submission
-  $("#register-form").submit(function() {
-  	remove_loading($(this));
-		
-		if(options['useAJAX'] == true)
-		{
-			// Dummy AJAX request (Replace this with your AJAX code)
-		  // If you don't want to use AJAX, remove this
-  	  dummy_submit_form($(this));
-		
-		  // Cancel the normal submission.
-		  // If you don't want to use AJAX, remove this
-  	  return false;
-		}
-  });
-
-	// Forgot Password Form
-	//----------------------------------------------
-	// Validation
-  $("#forgot-password-form").validate({
-  	rules: {
-      fp_email: "required",
-    },
-  	errorClass: "form-invalid"
-  });
-  
-	// Form Submission
-  $("#forgot-password-form").submit(function() {
-  	remove_loading($(this));
-		
-		if(options['useAJAX'] == true)
-		{
-			// Dummy AJAX request (Replace this with your AJAX code)
-		  // If you don't want to use AJAX, remove this
-  	  dummy_submit_form($(this));
-		
-		  // Cancel the normal submission.
-		  // If you don't want to use AJAX, remove this
-  	  return false;
-		}
-  });
-
-	// Loading
-	//----------------------------------------------
-  function remove_loading($form)
-  {
-  	$form.find('[type=submit]').removeClass('error success');
-  	$form.find('.login-form-main-message').removeClass('show error success').html('');
-  }
-
-  function form_loading($form)
-  {
-    $form.find('[type=submit]').addClass('clicked').html(options['btn-loading']);
-  }
-  
-  function form_success($form)
-  {
-	  $form.find('[type=submit]').addClass('success').html(options['btn-success']);
-	  $form.find('.login-form-main-message').addClass('show success').html(options['msg-success']);
-  }
-
-  function form_failed($form)
-  {
-  	$form.find('[type=submit]').addClass('error').html(options['btn-error']);
-  	$form.find('.login-form-main-message').addClass('show error').html(options['msg-error']);
-  }
-
-	// Dummy Submit Form (Remove this)
-	//----------------------------------------------
-	// This is just a dummy form submission. You should use your AJAX function or remove this function if you are not using AJAX.
-  function dummy_submit_form($form)
-  {
-  	if($form.valid())
-  	{
-  		form_loading($form);
-  		
-  		setTimeout(function() {
-  			form_success($form);
-  		}, 2000);
-  	}
-  }
-	
-})(jQuery);
+    
+    function msgFade ($msgId, $msgText) {
+        $msgId.fadeOut($msgAnimateTime, function() {
+            $(this).text($msgText).fadeIn($msgAnimateTime);
+        });
+    }
+    
+    function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+        var $msgOld = $divTag.text();
+        msgFade($textTag, $msgText);
+        $divTag.addClass($divClass);
+        $iconTag.removeClass("glyphicon-chevron-right");
+        $iconTag.addClass($iconClass + " " + $divClass);
+        setTimeout(function() {
+            msgFade($textTag, $msgOld);
+            $divTag.removeClass($divClass);
+            $iconTag.addClass("glyphicon-chevron-right");
+            $iconTag.removeClass($iconClass + " " + $divClass);
+  		}, $msgShowTime);
+    }
+});

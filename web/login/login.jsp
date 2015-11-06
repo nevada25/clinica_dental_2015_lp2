@@ -7,12 +7,13 @@
    <p > PERUANA JAPONESA</p>
      
 </div>
-    
+    <form action="menuloginSVT" method="POST">
     
     <div class="img-responsive" style="margin-top:-30px;">
         <img src="img/LOGOCD.jpg" style="width: 100%;">
-        
+        <button type="submit" style="background: none; border: none;" >HHLA</button>
     </div>
+    </form>
 <%@include  file="login/pielog.jsp" %>    
     
    

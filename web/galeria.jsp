@@ -1,4 +1,4 @@
-<%@include file="login/cabezalog.jsp" %>
+<%@include file="top.jsp" %>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -29,73 +29,73 @@
       </div>
     </div>
     <div class="item">
-     <img src="img/Nueva carpeta/carrosel(2).jpg" style="width: 100%; height:600px;"  alt="...">
+        <img src="img/Nueva carpeta/carrosel(2).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
        <div class="item">
-      <img src="img/Nueva carpeta/carrosel(3).jpg" style="width: 100%; height:600px;"  alt="...">
+           <img src="img/Nueva carpeta/carrosel(3).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
        <div class="item">
-     <img src="img/Nueva carpeta/carrosel(4).jpg" style="width: 100%; height:600px;"  alt="...">
+           <img src="img/Nueva carpeta/carrosel(4).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
         <div class="item">
-    <img src="img/Nueva carpeta/carrosel(5).jpg" style="width: 100%; height:600px;"  alt="...">
+            <img src="img/Nueva carpeta/carrosel(5).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
         <div class="item">
-     <img src="img/Nueva carpeta/carrosel(6).jpg" style="width: 100%; height:600px;"  alt="...">
+            <img src="img/Nueva carpeta/carrosel(6).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
         <div class="item">
-    <img src="img/Nueva carpeta/carrosel(7).jpg" style="width: 100%; height:600px;"  alt="...">
+            <img src="img/Nueva carpeta/carrosel(7).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
         <div class="item">
-     <img src="img/Nueva carpeta/carrosel(8).jpg" style="width: 100%; height:600px;"  alt="...">
+            <img src="img/Nueva carpeta/carrosel(8).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
         <div class="item">
-     <img src="img/Nueva carpeta/carrosel(9).jpg" style="width: 100%; height:600px;"  alt="...">
+            <img src="img/Nueva carpeta/carrosel(9).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
         <div class="item">
-     <img src="img/Nueva carpeta/carrosel(10).jpg" style="width: 100%; height:600px;"  alt="...">
+            <img src="img/Nueva carpeta/carrosel(10).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
        <div class="item">
-     <img src="img/Nueva carpeta/carrosel(11).jpg" style="width: 100%; height:600px;"  alt="...">
+           <img src="img/Nueva carpeta/carrosel(11).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
        <div class="item">
-     <img src="img/Nueva carpeta/carrosel(12).jpg" style="width: 100%; height:600px;"  alt="...">
+           <img src="img/Nueva carpeta/carrosel(12).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
     </div>
        <div class="item">
-     <img src="img/Nueva carpeta/carrosel(13).jpg" style="width: 100%; height:600px;"  alt="...">
+           <img src="img/Nueva carpeta/carrosel(13).jpg" style="width: 100%; height:600px;"  alt="...">
       <div class="carousel-caption">
       
       </div>
@@ -113,4 +113,4 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<%@include file="login/pielog.jsp" %>
+<%@include file="botton.jsp" %>

@@ -88,11 +88,6 @@ public void cerrar(){
             st.executeQuery(query);
             while (rs.next()) {
               persona=new Persona();
-                 persona.setId_persona(rs.getInt("id_Persona"));
-                 persona.setId_grado_instruccion(rs.getInt("gradoInstruccion"));
-                 persona.getId_ocupacion();
-                 persona.getId_ubigeo_nac();
-                 persona.getId_ubigeo_act();
                  persona.getNombre();
                  persona.getNombres();
                  persona.getApepat();
